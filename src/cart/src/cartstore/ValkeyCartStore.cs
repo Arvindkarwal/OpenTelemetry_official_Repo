@@ -21,6 +21,7 @@ public class ValkeyCartStore : ICartStore
     private volatile ConnectionMultiplexer _redis;
     private volatile bool _isRedisConnectionOpened;
 
+
     private readonly object _locker = new();
     private readonly byte[] _emptyCartBytes;
     private readonly string _connectionString;
